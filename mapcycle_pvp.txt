@@ -14,6 +14,7 @@ doi_sandwall offensive
 doi_v2_forest offensive
 dunkirk offensive
 foy offensive
+gibraltar liberation
 lazio offensive
 marketgarden offensive
 monte_cassino offensive
