@@ -59,10 +59,10 @@ public AdjustDifficulty() {
     return;
 
   new clientcount = GetPlayerCount();
-  new botcount = clientcount * 2;
+  new botcount = 6 + clientcount * 2;
   if(botcount > 32)
     botcount = 32;
   SetVarValue("doi_bot_count_default_enemy_max_players", botcount);
   SetVarValue("doi_bot_count_default_enemy_min_players", botcount);
-  SetVarValue("mp_cp_capture_time", 80 + clientcount * 15);
+  SetVarValue("mp_cp_capture_time", 120 + clientcount * 15);
 }
