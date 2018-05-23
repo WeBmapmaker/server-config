@@ -59,7 +59,7 @@ public AdjustDifficulty() {
     return;
 
   new clientcount = GetPlayerCount();
-  new botcount = 6 + clientcount * 2;
+  new botcount = 4 + clientcount * 2;
   if(botcount > 32)
     botcount = 32;
   SetVarValue("doi_bot_count_default_enemy_max_players", botcount);
