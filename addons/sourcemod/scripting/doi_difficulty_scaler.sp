@@ -51,16 +51,18 @@ public Action exec(int client, const char[] command, int arg)
 
 public SetVarValue(const String:name[], int value) {
   Handle my_cvar = FindConVar(name);
-  SetConVarInt(my_cvar, value);
+  SetConVarInt(my_cvar, value, false, false);
 }
 
-public AdjustDoICVars() {
+public AdjustDifficulty() {
   if(!StrEqual(CurrentGameMode, "stronghold"))
     return;
 
   new clientcount = GetPlayerCount();
-  new botcount = 6 + clientcount * 2;
+  new botcount = clientcount * 2;
+  if(botcount > 32)
+    botcount = 32;
   SetVarValue("doi_bot_count_default_enemy_max_players", botcount);
   SetVarValue("doi_bot_count_default_enemy_min_players", botcount);
-  SetVarValue("mp_cp_capture_time", 200 + clientcount * 10);
+  SetVarValue("mp_cp_capture_time", 80 + clientcount * 15);
 }
