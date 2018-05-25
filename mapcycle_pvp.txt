@@ -30,5 +30,6 @@ sicily offensive
 squatter_night offensive
 tobruk offensive
 tom offensive
+web_arcticfox offensive
 web_carentan_pvp offensive
 westwall offensive

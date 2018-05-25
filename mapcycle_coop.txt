@@ -40,5 +40,6 @@ squatter stronghold
 squatter_dawn stronghold
 squatter_night stronghold
 tobruk stronghold
+web_arcticfox stronghold
 web_carentan stronghold
 westwall stronghold
