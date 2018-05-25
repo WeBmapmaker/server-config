@@ -34,6 +34,13 @@ public RemoveCheatFlag(const String:name[]) {
   SetConVarFlags(my_cvar, srda_flags);
 }
 
+public RemoveNotifyFlag(const String:name[]) {
+  Handle my_cvar = FindConVar(name);
+  int srda_flags = GetConVarFlags(my_cvar);
+  srda_flags &= ~FCVAR_NOTIFY;
+  SetConVarFlags(my_cvar, srda_flags);
+}
+
 public AdjustDoICVars() {
   SetVarUpperBound("mp_coop_lobbysize", MaxClients - 24.0);
   SetVarUpperBound("mp_timer_pregame", 600.0);
@@ -54,4 +61,5 @@ public AdjustDoICVars() {
   RemoveCheatFlag("doi_bot_silhouette_scan_frequency");
   RemoveCheatFlag("doi_bot_vis_foliage_threshold");
   RemoveCheatFlag("sv_radial_debug_artillery");
+  RemoveNotifyFlag("mp_cp_capture_time");
 }
