@@ -15,6 +15,7 @@ doi_hinterhof_rework stronghold
 doi_laststand stronghold
 doi_pegasus stronghold
 doi_railyard stronghold
+doi_reichsfarm stronghold
 doi_sandwall stronghold
 doi_v2_forest stronghold
 dunkirk stronghold

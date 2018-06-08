@@ -10,6 +10,7 @@ comacchio offensive
 crete offensive
 dog_red offensive
 doi_pegasus offensive
+doi_reichsfarm offensive
 doi_sandwall offensive
 doi_v2_forest offensive
 dunkirk offensive
